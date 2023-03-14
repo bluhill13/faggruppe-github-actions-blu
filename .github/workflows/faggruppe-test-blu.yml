@@ -37,9 +37,11 @@ jobs:
              
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v3.0.3
+        with:
+          dotnet-version: 3.1.0
       - name: build-dotnet
         working-directory: ./TestGithubActions
         run: dotnet build 
-      - name: build-dotnet
+      - name: test
         working-directory: ./TestGithubActions
         run: dotnet test 
