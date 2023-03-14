@@ -26,7 +26,7 @@ namespace TestGithubActions.UnitTests
         {
             var result = _math.Sqr(3);
 
-            Assert.AreEqual(9, result);
+            Assert.AreEqual(4, result);
         }
     }
 }
